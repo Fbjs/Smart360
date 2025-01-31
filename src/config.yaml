@@ -1,7 +1,7 @@
 site:
-  name: Neighbour
-  leyend: Technology 
-  site: 'https://astrowind.vercel.app'
+  name: Smart360
+  leyend: Marketing Digital 
+  site: 'https://www.smart360.cl'
   base: '/'
   trailingSlash: false
 

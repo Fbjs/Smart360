@@ -1,6 +1,6 @@
 ---
-import Layout from '~/layouts/PageLayout.astro';
-import HeroText from '~/components/widgets/HeroText.astro';
+import Layout from '~/layouts/LandingLayout2.astro';
+import HeroText from '~/components/widgets/HeroTextSimple.astro';
 import ContactUs from '~/components/widgets/Contact.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 
@@ -22,11 +22,11 @@ const metadata = {
   }
 </style>
 
+<Layout metadata={metadata} >
 
-
-
-<Layout metadata={metadata}>
-  <HeroText tagline="Contacto" title="¡Conectémonos!" />
+    <div class="mt-10" style="margin-top:100px">
+      <HeroText   tagline="Contacto" title="Contactos" />
+    </div>
 
   <div class="relative bg-mapa">
     <!-- Capa semi-transparente -->
@@ -36,7 +36,7 @@ const metadata = {
     <div class="relative z-10">
       <ContactUs
         id="form"
-        title="¡Envíanos un mensaje hoy mismo!"
+        title="¡Envíanos un mensaje !"
         subtitle="Para respuestas más rápidas, explora nuestra sección de preguntas frecuentes. ¡Quizás encuentres la solución que buscas ahí! Si no, nuestro equipo de soporte estará encantado de ayudarte."
         inputs={[
           {
@@ -65,6 +65,7 @@ const metadata = {
         items={[
           {
             title: 'Soporte general',
+            classes:[],
             description: `Chatea con nosotros para consultas relacionadas con la gestión de cuentas, navegación en el sitio web, problemas de pago o preguntas generales sobre el funcionamiento de nuestro sitio.`,
           },
           {
@@ -93,7 +94,12 @@ const metadata = {
             icon: 'tabler:map-pin',
           },
         ]}
-      />
+      >
+
+        <Fragment slot="bg">
+          <div class="absolute inset-0  bg-opacity-80"></div>
+        </Fragment>
+      </Features2>
     </div>
   </div>
 

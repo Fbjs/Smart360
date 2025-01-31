@@ -1,266 +1,297 @@
 ---
-import Layout from '~/layouts/PageLayout.astro';
+import Layout from '~/layouts/LandingLayout2.astro';
 
-import Hero from '~/components/widgets/Hero.astro';
-import HeroCarousel from '~/components/widgets/HeroCarousel.astro';
-import Note from '~/components/widgets/Note.astro';
-import Features from '~/components/widgets/Features.astro';
-import Features2 from '~/components/widgets/Features2.astro';
-import Steps from '~/components/widgets/Steps.astro';
-import Content from '~/components/widgets/Content.astro';
-import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
-import Stats from '~/components/widgets/Stats.astro';
+import Hero2 from '~/components/widgets/HeroMarketing.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
-import Slider from '~/components/widgets/Slider.astro';
 
-import image2 from '~/assets/images/FENIX_contact_center.png';
-import ContactForm from '~/components/widgets/ContactForm.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Features from '~/components/widgets/Features.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
 import Brands from '~/components/widgets/Brands.astro';
+import Prices from '~/components/widgets/Pricing.astro';
 import Button from '~/components/ui/Button.astro';
 
-import Santander from '~/assets/images/Santander.jpg';
-import Regalariza from '~/assets/images/regalariza.jpg';
-import MundoCreditos from '~/assets/images/Mundo_creditos.jpg';
-import MarubeniCredit from '~/assets/images/Marubeni_credit.png';
-import MAF from '~/assets/images/MAF.jpg';
-import IACC from '~/assets/images/IACC.png';
-import IPLACEX from '~/assets/images/IPLACEX.png';
-import GrupoMok from '~/assets/images/grupo_mok.png';
-import Falabella from '~/assets/images/fallabella.png';
-import ClinicaLasCondes from '~/assets/images/Clinica-Las-Condes.jpg';
-import ClinicaCordillera from '~/assets/images/clinica-cordillera.jpg';
-import Clinica_U_de_los_andes from '~/assets/images/Clinica_U_de_los_andes.png';
+import videoBackground from '~/assets/images/hero_marketing4.mp4';
 
-
-
-
-
+import HeroImagen from '~/assets/images/cohete.png';
 
 const metadata = {
-  title: 'Neighbour Technology — Soluciones Tecnológicas Innovadoras',
-  ignoreTitleTemplate: true,
+  title: 'Marketing Digital Personalizado',
 };
 ---
 
-<style>
-  .bg-fondo {
-    background-image: url('/src/assets/images/tex5.jpg'); /* Reemplaza con la ruta a tu imagen */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    width: 100%;
-    height: 100%;
-  }
-</style>
-
-
-
 <Layout metadata={metadata}>
-  <!----HeroCarousel />----->
-  <Slider class="relative overflow-hidden">
-    <!--Fragment slot="boton">
-      <Button variant="primary" class="open-modal-btn btn-slider-1 entry-effect-1">
-        Cotiza tu Proyecto
-      </Button>
-      <a href="https://wa.me/56963238857?text=Hola,%20me%20gustaría%20recibir%20más%20información" target="_blank" class="flex items-center justify-center font-semibold bg-[#25D366] text-white border-[#25D366] px-8 py-2 rounded-full space-x-2 btn-slider-2 entry-effect-2">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp">
-          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
-          <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
-        </svg>
-        <span>Chatea con un Asesor</span>
-      </a>
-    </Fragment-->
-  </Slider>
-  
+    <!-- Hero2 Widget ******************* -->
+
+    
+    <Hero2
+        tagline="Smart360 Marketing Digital"
+        title="IMPULSAMOS TU NEGOCIO."
+        subtitle="¿Listo para despegar en el mundo digital?"
+        subsubtitle="En Smart360, Empresas en toda Latinoamérica con el éxito online. Reserva ahora una videollamada con nuestros expertos en marketing digital y descubre nuestra estrategia de crecimiento acelerado."        
+        image={{
+        src: HeroImagen,
+        alt: 'Marketing Digital Personalizado',
+        }}
+    >
+        <Fragment slot="boton">
+          <a href="/contact" class="animate-pulse hover:scale-105 open-modal-btn px-8 py-3 rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 transition duration-300 text-white shadow-lg">
+            Empieza Ahora
+          </a>
+          <a href="https://wa.me/56963238857?text=Hola,%20me%20gustaría%20recibir%20más%20información" target="_blank" class="animate-pulse hover:scale-105 flex items-center justify-center bg-[#25D366] text-white px-4 py-3 rounded-lg transition duration-300 hover:bg-[#20B357] shadow-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="mr-2">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+              <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+            </svg>
+            <span>Whatsapp Asesor</span>
+          </a>
+
+        </Fragment>
+    </Hero2>
 
 
-  <Note />
+   <!-- Features2 Widget ************** -->
 
-  <!-- Features Widget *************** -->
-
-  
-
-
-  <Features
-    id="features"
-    tagline="Servicios"
-    title="Lo que ofrecemos en Neighbour Technology"
-    subtitle="Metodología centrada en la mejora continua, la sinergia y la creatividad colaborativa para optimizar recursos y crear herramientas digitales innovadoras."
-    items={[
-      {
-        title: 'Mantenimiento y Reparación de Hardware',
-        description:
-          'Mantenimiento preventivo, reparaciones, actualizaciones, gestión de inventario y optimización de recursos.',
-        icon: 'tabler:tool',
-      },
-      {
-        title: 'Desarrollo de Software y Sistemas Informáticos',
-        description:
-          'Desarrollos web, intranet, sistemas de inventario, plataformas e-commerce, control documental y automatización de procesos.',
-        icon: 'tabler:code',
-      },
-      {
-        title: 'Outsourcing de Especialistas de Tecnología',
-        description:
-          'BackOffice, analista de datos, soporte técnico, desarrolladores, gestión de redes y consultoría TI.',
-        icon: 'tabler:users',
-      },
-      {
-        title: 'Data Center',
-        description:
-          'Infraestructura de vanguardia para garantizar la seguridad, fiabilidad y rendimiento de tus datos con servicios de hosting, correos corporativos y servidores.',
-        icon: 'tabler:server',
-      },
-      {
-        title: 'Servicios TELCO',
-        description:
-          'Soluciones integrales de telecomunicaciones con telefonía IP y SMS eficientes para potenciar la productividad empresarial.',
-        icon: 'tabler:phone',
-      },
-      {
-        title: 'Marketing Digital',
-        description:
-          'Campañas de generación de LEADS, landing pages con formatos audiovisuales, selección de canales de difusión y chatbots para flujos personalizados.',
-        icon: 'tabler:chart-line',
-      },
-    ]}
-  />
-
-  
-
-
-<div class="bg-fondo">
-    <!-- Features2 Widget ************** -->
-
-    <Features2
-    title="Otras Especialidades"
-    subtitle="Expertos en Soluciones Tecnológicas"
-    tagline="Especialidades"
-    items={[
-      {
-        title: 'Experto en VICIdial',
-        description: 'Accede a un centro de contacto completo con marcación predictiva y gestión de agentes.',
-        icon: 'tabler:device-desktop',
-      },
-      {
-        title: 'Experto en Asterisk',
-        description: 'Integra voz en una plataforma escalable para optimizar tus comunicaciones.',
-        icon: 'tabler:phone-call',
-      },
-      {
-        title: 'Gestor Integral VICIdial - Asterisk',
-        description: 'Gestión de acciones y reportes de manera efectiva para optimizar tus operaciones.',
-        icon: 'tabler:report',
-      },
-    ]}
+   <div id="about">  </div>
+  <Features2
+    title="Quiénes Somos"
+    subtitle="Somos un equipo de expertos en marketing digital, enfocados en crear campañas innovadoras y efectivas que ayuden a las empresas a alcanzar sus objetivos. Trabajamos contigo para construir una estrategia digital personalizada que realmente funcione."
   >
     <Fragment slot="bg">
-      <div class="absolute inset-0 "></div>
+        <div class="absolute inset-0 bg-opacity-80 hover:scale-105"></div>
     </Fragment>
   </Features2>
+ 
 
-  <!-- Stats Widget ****************** -->
-  <div class="bg-blue-50 dark:bg-dark p-6 my-8">
-    <Stats
-      stats={[
-        { title: 'Clientes Satisfechos', amount: '500+' },
-        { title: 'Proyectos Completados', amount: '1200+' },
-        { title: 'Años de Experiencia', amount: '10+' },
-        { title: 'Expertos en Tecnología', amount: '50+' },
-      ]}
-    />
+ <!-- Stats Widget ****************** -->
 
-
-
-    <Brands
-    title="Instituciones que Confían en Neighbour Technology"
-    subtitle="En Neighbour Technology, colaboramos con estas organizaciones para ofrecer soluciones tecnológicas a medida, mejorando su infraestructura y optimizando procesos."
-    icons={[]}
-    images={[
-      {
-        src: Santander.src,
-        alt: 'Santander',
-      },
-      {
-        src: Regalariza.src,
-        alt: 'Regalariza',
-      },
-      {
-        src: MundoCreditos.src,
-        alt: 'MundoCreditos',
-      },
-      {
-        src: MarubeniCredit.src,
-        alt: 'MarubeniCredit',
-      },
-      {
-        src: MAF.src,
-        alt: 'MAF',
-      },
-      {
-        src: IACC.src,
-        alt: 'IACC',
-      },
-      {
-        src: IPLACEX.src,
-        alt: 'IPLACEX',
-      },
-      {
-        src: GrupoMok.src,
-        alt: 'GrupoMok',
-      },
-      {
-        src: Falabella.src,
-        alt: 'Falabella',
-      },
-      {
-        src: ClinicaLasCondes.src,
-        alt: 'ClinicaLasCondes',
-      },
-      {
-        src: ClinicaCordillera.src,
-        alt: 'ClinicaCordillera',
-      },
-      {
-        src: Clinica_U_de_los_andes.src,
-        alt: 'Clinica_U_de_los_andes',
-      },
-    ]}
-  />
-  </div>
-  
-
-  <!-- CallToAction Widget *********** -->
-
-  <CallToAction
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Solicita más información',
-        href: 'mailto:admintrador@neighbour.cl',
-        icon: 'tabler:mail',
-      },
+  <Stats
+    title="Resultados de Nuestras Campañas"
+    
+    subtitle="Las siguientes cifras destacan el impacto que nuestras campañas de marketing digital han tenido en nuestros clientes."
+    stats={[
+      { title: 'Campañas Ejecutadas', amount: '300+' },
+      { title: 'Clientes Satisfechos', amount: '250+' },
+      { title: 'Aumento de Visibilidad', amount: ' 80+' },
+      { title: 'Tasa de Conversión', amount: '40+' },
     ]}
   >
-    <Fragment slot="title">
-      ¡Potencia tu Negocio con <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Neighbour Technology!</span>
+      <Fragment slot="bg">
+          <div class="absolute inset-0 bg-blue-50 dark:bg-dark bg-opacity-80 my-5"></div>
+      </Fragment>
+
+  </Stats>
+
+ <!-- Features Widget *************** -->
+ <div id="services">  </div>
+ <Features
+  id="features"
+  title="Características de Nuestras Estrategias de Marketing"
+  subtitle="Ofrecemos un enfoque integral que cubre todas las áreas clave para lograr resultados medibles."
+  columns={3}
+  items={[
+    {
+      title: 'SEO y Posicionamiento',
+      description:
+        'Optimizamos tu presencia en buscadores para que tu marca aparezca en los primeros resultados y atraiga tráfico de calidad.',
+      icon: 'tabler:search',
+    },
+    {
+      title: 'Gestión de Redes Sociales',
+      description:
+        'Creamos y gestionamos contenido estratégico para aumentar tu presencia en redes sociales y conectar con tu audiencia.',
+      icon: 'tabler:brand-facebook',
+    },
+    {
+      title: 'Publicidad Digital (PPC)',
+      description:
+        'Diseñamos campañas de pago por clic en plataformas como Google Ads y Facebook Ads para atraer leads de calidad.',
+      icon: 'tabler:credit-card',
+    },
+    {
+      title: 'Email Marketing',
+      description: 
+        'Implementamos estrategias de email marketing para fidelizar a tus clientes y generar nuevas oportunidades de negocio.',
+      icon: 'tabler:mail',
+    },
+    {
+      title: 'Análisis y Optimización',
+      description: 
+        'Monitorizamos los resultados de cada campaña y realizamos ajustes continuos para optimizar el rendimiento.',
+      icon: 'tabler:chart-bar',
+    },
+    {
+      title: 'Soporte Continuo',
+      description:
+        'Te acompañamos en cada etapa del proceso, brindando soporte técnico y asesoría constante.',
+      icon: 'tabler:headset',
+    },
+  ]}>
+     <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-dark bg-opacity-80"></div>
     </Fragment>
+  </Features>
+   
 
-    <Fragment slot="subtitle">
-      Contacta con nosotros para más información sobre nuestros servicios y soluciones tecnológicas.
-    </Fragment>
+<!-- Aquí puedes insertar el componente de precios -->
+<div id="planes">  </div>
+<Prices
+    title="Nuestros Planes de Community Manager"
+    subtitle="Elige el plan que mejor se ajuste a las necesidades de tu negocio"
+    
+    prices={[
+      {
+        title: 'Básico',
+        subtitle: 'Ideal para negocios que recién empiezan en el marketing digital',
+        price: '6.51 UF',
+        period: 'MES',
+        items: [
+          {
+            description: 'Gestión de redes sociales (1 plataforma)',
+          },
+          {
+            description: 'Optimización básica de SEO',
+          },
+          {
+            description: 'Informe mensual de rendimiento',
+          },
+          {
+            description: 'Publicidad digital Segun presupuesto del cliente',
+          },
+          {
+            description: 'Análisis básico de seguimiento web',
+          },
+        ],
+        callToAction: {
+          target: '_blank',
+          text: 'Empezar',
+          href: '#',
+        },
+      },
+      {
+        title: 'Estándar',
+        subtitle: 'Perfecto para negocios en crecimiento',
+        price: '9.11 UF',
+        period: 'MES',
+        items: [
+          {
+            description: 'Gestión de redes sociales (hasta 3 plataformas)',
+          },
+          {
+            description: 'Optimización avanzada de SEO',
+          },
+          {
+            description: 'Informe quincenal de rendimiento',
+          },
+          {
+            description: 'Publicidad digital Segun presupuesto del cliente',
+          },
+          {
+            description: 'Análisis de seguimiento web',
+          },
+          {
+            description: 'Creación de contenido para blog (2 artículos al mes)',
+          },
+        ],
+        callToAction: {
+          target: '_blank',
+          text: 'Empezar',
+          href: '#',
+        },
+        hasRibbon: true,
+        ribbonTitle: 'Más Popular',
+      },
+      {
+        title: 'Premium',
+        subtitle: 'La opción más completa para empresas establecidas',
+        price: '11.72 UF',
+        period: 'MES',
+        items: [
+          {
+            description: 'Gestión de redes sociales (plataformas ilimitadas)',
+          },
+          {
+            description: 'SEO profesional y análisis competitivo',
+          },
+          {
+            description: 'Informe semanal de rendimiento',
+          },
+          {
+            description: 'Publicidad digital Segun presupuesto del cliente',
+          },
+          {
+            description: 'Análisis avanzado de seguimiento web y optimización continua',
+          },
+          {
+            description: 'Creación de contenido para blog (4 artículos al mes)',
+          },
+          {
+            description: 'Soporte prioritario y asesoría personalizada',
+          },
+        ],
+        callToAction: {
+          target: '_blank',
+          text: 'Empezar',
+          href: '#',
+        },
+      },
+    ]}
+/>
 
-    <Fragment slot="boton">
-      <Button variant="primary" class="open-modal-btn">
-        Cotiza tu Proyecto
-      </Button>
-    </Fragment>
+<CallToAction
+  actions={[
+    {
+      variant: 'primary',
+      target: '_blank',
+      text: 'Cotiza tu plan a la medida',
+      href: 'https://wa.me/56963238857?text=Hola%2C%20me%20gustaría%20cotizar%20un%20plan%20de%20marketing%20digital%20a%20la%20medida%20según%20las%20necesidades%20de%20mi%20negocio',
+      icon: 'tabler:message-circle',
+    },
+  ]}
+>
+  <Fragment slot="title">Diseña un plan de marketing digital a la medida</Fragment>
 
-  </CallToAction>
+  <Fragment slot="subtitle">
+    Adaptamos nuestras estrategias de marketing digital para ajustarse perfectamente a las necesidades y objetivos específicos de tu negocio. Solicita una cotización personalizada y comienza a crecer.
+  </Fragment>
+  <Fragment slot="boton">
+    <Button variant="primary" class="open-modal-btn">
+      Cotiza tu Plan de Marketing digital
+    </Button>
+  </Fragment>
+</CallToAction>
 
-</div>
+<FAQs
+title="Preguntas Frecuentes"
+items={[
+  {
+    title: '¿Qué incluye una estrategia de marketing digital?',
+    description:
+      'Nuestra estrategia incluye SEO, publicidad digital, gestión de redes sociales, email marketing y análisis de datos, todo personalizado para tu negocio.',
+  },
+  {
+    title: '¿Cuánto tiempo toma ver resultados?',
+    description:
+      'Dependiendo de la estrategia y los objetivos, los primeros resultados pueden verse en 1 a 3 meses. Campañas pagas, como Google Ads, pueden generar resultados más rápidos.',
+  },
+  {
+    title: '¿Pueden gestionar mis redes sociales?',
+    description:
+      'Sí, nos encargamos de crear y gestionar contenido relevante para tus redes sociales, ayudando a aumentar tu interacción y seguidores.',
+  },
+  {
+    title: '¿Cómo medimos el éxito de la estrategia?',
+    description:
+      'Utilizamos métricas clave como tráfico web, conversiones, tasa de clics y retorno de inversión (ROI) para medir el éxito y optimizar las campañas.',
+  },
+]}
+>
+
+<Fragment slot="bg">
+  <div class="absolute inset-0 bg-blue-50 dark:bg-dark bg-opacity-90 my-10"></div>
+</Fragment>
+</Features>
 
 </Layout>

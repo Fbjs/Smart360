@@ -9,6 +9,7 @@ import mdx from '@astrojs/mdx';
 import partytown from '@astrojs/partytown';
 import icon from 'astro-icon';
 import compress from 'astro-compress';
+import animations from '@midudev/tailwind-animations'
 
 import astrowind from './vendor/integration';
 
@@ -26,7 +27,7 @@ const whenExternalScripts = (items = []) =>
 
 export default defineConfig({
   output: 'static',
-
+  plugins: [animations],
   integrations: [
     tailwind({
       applyBaseStyles: false,

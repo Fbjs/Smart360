@@ -4,7 +4,7 @@ export const headerData = {
   links:[
     {
       text: 'Inicio',
-      href: '/SmartMarketing',
+      href: '/',
     },
     {
       text: 'Nosotros',
@@ -44,6 +44,6 @@ export const footerData = {
     //{ ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
   ],
   footNote: `
-    Made by <a class="text-blue-600 underline dark:text-muted" href="https://neighbour.cl/"> Neighbour</a> · All rights reserved.
+    Made by <a class="text-blue-600 underline dark:text-muted" href="https://www.smart360.cl/"> Smart360</a> · All rights reserved.
   `,
 };
