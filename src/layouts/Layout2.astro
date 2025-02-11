@@ -54,6 +54,35 @@ const { language, textDirection } = I18N;
       </video>
     </div>
     <slot />
+
+    <ContactUs
+        inputs={[
+          {
+            type: 'text',
+            name: 'name',
+            label: 'Nombre',
+            placeholder: 'Tu Nombre',
+          },
+          {
+            type: 'text',
+            name: 'phone',
+            label: 'Teléfono',
+            placeholder: 'Tu Numero',
+          },
+          {
+            type: 'email',
+            name: 'mail',
+            label: 'Correo',
+            placeholder: 'Tu Email',
+          },
+        ]}
+        textarea={{
+          label: 'Mensaje',
+          placeholder: 'Tu Mensaje'
+        }}
+        description="Nuestro equipo te responderá en menos de 24hrs."
+      />
+
     <BasicScripts />
 
     <style is:global>
